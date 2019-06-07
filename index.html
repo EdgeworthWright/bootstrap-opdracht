@@ -6,7 +6,7 @@
   <title>Lord of the Rings</title>
   <meta name="author" content="Damien Hensen">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body lang="nl">
@@ -44,7 +44,7 @@
 
   <!-- jumbotron -->
 
-  <header class="jumbotron">
+  <header class="jumbotron text-warning">
     <div class="container-fluid">
       <h1 class="display-4">Lord of the Rings</h1>
       <p class="lead">The Fellowship of the Ring, The Two Towers, The Return of the King
@@ -124,21 +124,27 @@
   <div id="verhaal" class="container-fluid">
     <div class="row p-4">
       <section id="fellow" class="col-md-6 col-lg-4 p-4">
-        <h3>The Fellowship of the Ring</h3>
-        <img src="img/fellowshipOfTheRings.jpg" alt="The Fellowship of the Ring" class="img-fluid">
-        <h4>2001</h4>
+        <section class="card">
+          <h3 class="text-center card-header">The Fellowship of the Ring</h3>
+          <img src="img/fellowshipOfTheRings.jpg" alt="The Fellowship of the Ring" class="img-fluid card-img-top">
+          <div class="card-body">
+            <h4>2001</h4>
 
-        <article>
-          <p>Sauron, de machtige heerser van het kwaad heeft zijn ring verloren. Maar de ring, die de macht van het kwaad is, moet worden vernietigd. Via Gollem, komt deze in het bezit van Bilbo, een Hobbit.
-            <br>
-            De tovenaar Gandalf ontdekt dat de Ring er nog is een gaat het hoofd van de tovenaarsorde raadplegen. Die blijkt de kant van Sauron gekozen te hebben. Sauron gaat op jacht naar de ring. De Nazgûl trekken op naar de Gouw....
-          </p>
-        </article>
+            <article>
+              <p>Sauron, de machtige heerser van het kwaad heeft zijn ring verloren. Maar de ring, die de macht van het kwaad is, moet worden vernietigd. Via Gollem, komt deze in het bezit van Bilbo, een Hobbit.
+                <br>
+                De tovenaar Gandalf ontdekt dat de Ring er nog is een gaat het hoofd van de tovenaarsorde raadplegen. Die blijkt de kant van Sauron gekozen te hebben. Sauron gaat op jacht naar de ring. De Nazgûl trekken op naar de Gouw....
+              </p>
+            </article>
 
-        <!-- button voor modaal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fellowship">
-          Lees Meer
-        </button>
+          </div>
+          <div class="card-footer text-center">
+            <!-- button voor modaal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fellowship">
+              Lees Meer
+            </button>
+          </div>
+        </section>
         <!-- inhoud voor modaal -->
         <div class="modal fade" id="fellowship" tabindex="-1" role="dialog" aria-labelledby="titleFellowship" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -265,22 +271,29 @@
       </section>
 
       <section id="twoTowers" class="col-md-6 col-lg-4 p-4">
-        <h3>The Two Towers</h3>
-        <img src="img/lord-of-the-rings-two-towers.jpg" alt="The Two Towers" class="img-fluid">
-        <h4>2002</h4>
-        <article>
-          <p>Na het gezelschap te hebben verlaten, reizen Frodo en Sam samen verder naar Mordor. Ze worden achtervolgd door Gollem, die zijn ”lieveling” terug wil. Hij valt de twee aan, maar Frodo slaagt erin Gollem te overmeesteren. Sam wantrouwt
-            Gollem, maar
-            Frodo ziet in Gollem een perfecte gids om hen naar Mordor te leiden. Gollem is immers kort geleden uit Mordor ontsnapt. Gollem stemt toe de twee Hobbits naar Mordor te brengen.
-          </p>
-          <p>Ondertussen worden de Hobbits Merijn en Pepijn door een groep Uruk-hai naar Isengard gebracht, achtervolgd door Aragorn, Legolas en Gimli. De tocht leidt hen door het koninkrijk van Rohan.
-          </p>
-        </article>
+        <section class="card">
+          <h3 class="text-center card-header">The Two Towers</h3>
+          <img src="img/lord-of-the-rings-two-towers.jpg" alt="The Two Towers" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h4>2002</h4>
+            <article>
+              <p>Na het gezelschap te hebben verlaten, reizen Frodo en Sam samen verder naar Mordor. Ze worden achtervolgd door Gollem, die zijn ”lieveling” terug wil. Hij valt de twee aan, maar Frodo slaagt erin Gollem te overmeesteren. Sam
+                wantrouwt
+                Gollem, maar
+                Frodo ziet in Gollem een perfecte gids om hen naar Mordor te leiden. Gollem is immers kort geleden uit Mordor ontsnapt. Gollem stemt toe de twee Hobbits naar Mordor te brengen.
+              </p>
+              <p>Ondertussen worden de Hobbits Merijn en Pepijn door een groep Uruk-hai naar Isengard gebracht, achtervolgd door Aragorn, Legolas en Gimli. De tocht leidt hen door het koninkrijk van Rohan.
+              </p>
+            </article>
+          </div>
 
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#towers">
-          Lees Meer
-        </button>
+          <!-- Button trigger modal -->
+          <div class="card-footer text-center">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#towers">
+              Lees Meer
+            </button>
+          </div>
+        </section>
 
         <!-- inhoud voor modaal -->
         <div class="modal fade" id="towers" tabindex="-1" role="dialog" aria-labelledby="titleTowers" aria-hidden="true">
@@ -314,7 +327,8 @@
                   Gollem
                   beweert een veiligere weg naar Mordor te kennen.
                 </p>
-                <p>Die nacht overvallen Éomer en zijn soldaten in Rohan de groep Orks en Uruk-hai die Merijn en Pepijn had ontvoerd. In het gevecht kunnen de twee Hobbits ontkomen. Ze vluchten een bos in, achtervolgd door een Ork die hen wilt opeten.
+                <p>Die nacht overvallen Éomer en zijn soldaten in Rohan de groep Orks en Uruk-hai die Merijn en Pepijn had ontvoerd. In het gevecht kunnen de twee Hobbits ontkomen. Ze vluchten een bos in, achtervolgd door een Ork die hen wilt
+                  opeten.
                   Als
                   Pepijn een
                   boom in klimt, blijkt de boom een Ent te zijn genaamd Boombaard, die de Ork plat trapt. Boombaard neemt Merijn en Pepijn mee naar een witte Tovenaar.
@@ -322,7 +336,8 @@
                 <p>Éomer komt later Aragorn, Legolas en Gimli tegen, en vertelt hen over de slachtpartij. Het drietal haast zich naar de plek van het gevecht. De Hobbits zijn al vertrokken met de Enten, maar de drie vinden tot hun verbazing wel
                   Gandalf. Deze
                   blijkt
-                  na zijn dood door de Balrog te zijn herboren als de sterkere Gandalf de Witte. Het viertal reist af naar Edoras, waar Gandalf Sarumans macht over de koning verbreekt. Nu Théoden weer bij kennis is, laat hij zijn volk evacueren naar
+                  na zijn dood door de Balrog te zijn herboren als de sterkere Gandalf de Witte. Het viertal reist af naar Edoras, waar Gandalf Sarumans macht over de koning verbreekt. Nu Théoden weer bij kennis is, laat hij zijn volk evacueren
+                  naar
                   een
                   vallei genaamd
                   Helmsdiepte. Gandalf vertrekt om Éomer en zijn soldaten te vinden. Gríma Slangtong, die door Théoden verbannen was, vlucht naar Isengard om Saruman het nieuws te vertellen. Saruman besluit met zijn leger Helmsdiepte aan te vallen.
@@ -333,7 +348,8 @@
                   aan
                   één
                   van de
-                  beugels van het zadel van Sharku's Warg hangen waardoor hij samen met de Warg vanaf een klif in een rivier stort. Sharku denkt dan ook dat Aragorn dood is en wanneer Gimli hem naar Aragorn vraagt, meldt hij de dood van Aragorn. Dat
+                  beugels van het zadel van Sharku's Warg hangen waardoor hij samen met de Warg vanaf een klif in een rivier stort. Sharku denkt dan ook dat Aragorn dood is en wanneer Gimli hem naar Aragorn vraagt, meldt hij de dood van Aragorn.
+                  Dat
                   wenst
                   Legolas op
                   dat moment niet te geloven en maakt Sharku uit voor leugenaar. Sharku lacht nog even sarcastisch en sterft. Aragorn heeft de val echter wonderbaarlijk overleefd, komt uren later op de rivieroever bij, zijn paard heeft hem zowaar
@@ -341,7 +357,8 @@
                   en hij
                   reist alsnog de anderen achterna naar Helmsdiepte. Onderweg ontwaart hij Sarumans leger van minstens 10.000 Uruk-hai. In Helmsdiepte zijn slechts 300 mensen aanwezig die kunnen vechten.
                 </p>
-                <p>Gollem krijgt ondertussen een steeds groter conflict met zijn reisgenoten. Zijn goede kant (Sméagol) wil vriend worden met Sam en Frodo. Gedrieën worden ze gevangengenomen door soldaten van Gondor. De leider is Faramir. Hij ontdekt
+                <p>Gollem krijgt ondertussen een steeds groter conflict met zijn reisgenoten. Zijn goede kant (Sméagol) wil vriend worden met Sam en Frodo. Gedrieën worden ze gevangengenomen door soldaten van Gondor. De leider is Faramir. Hij
+                  ontdekt
                   dat
                   Frodo de
                   Ene Ring bezit en wil deze naar zijn vader, de stadhouder van Gondor, brengen om zijn waardigheid te bewijzen.
@@ -357,7 +374,8 @@
                   ravage zien
                   die Saruman heeft aangericht in het bos rondom Isengard veranderen ze van gedachten. De Enten vernietigen Sarumans kamp, en zorgen ervoor dat Saruman niet uit zijn toren kan.
                 </p>
-                <p>In de ruïnes van Osgiliath worden Faramir en de Hobbits aangevallen door een Nazgûl. Sam kan Faramir overtuigen hem, Frodo en Gollem te laten gaan om de Ring te vernietigen, aangezien dat aan alle ellende een eind maakt. Samen met
+                <p>In de ruïnes van Osgiliath worden Faramir en de Hobbits aangevallen door een Nazgûl. Sam kan Faramir overtuigen hem, Frodo en Gollem te laten gaan om de Ring te vernietigen, aangezien dat aan alle ellende een eind maakt. Samen
+                  met
                   Gollem
                   vertrekken de twee Hobbits weer. Gollem voelt zich verraden door de Hobbits daar ze hem niet hielpen toen Faramirs mannen hem vingen, en hij vervalt weer in zijn oude gedrag. Beseffend dat hij de Hobbits zelf niet aankan, besluit
                   hij
@@ -378,23 +396,30 @@
       <!-- nieuwe kolom / sectie -->
 
       <section id="kingReturn" class="col-md-6 col-lg-4 p-4">
-        <h3>The Return of the King</h3>
-        <img src="img/returnOfTheKing.jpg" alt="The Return of the King" class="img-fluid">
-        <h4>2003</h4>
-        <article>
-          <p>Gollem doet nog altijd dienst als gids voor Frodo en Sam, die hij naar Minas Ithil brengt. Aragorn, Legolas, Gimli, Gandalf, Théoden en Éomer arriveren ondertussen bij het door de Enten veroverde Isengard, waar ze Merijn en Pepijn
-            terugvinden.
-            Pepijn vindt in het water de Palantír van Saruman. Die avond besluit Pepijn er, tegen Gandalfs advies in, in te kijken. Hij ziet hoe Sauron een aanval beraamt op de stad Minas Tirith. Sauron ziet door de Palantír echter Pepijn en denkt
-            dat
-            hij de Ene
-            Ring heeft. Gandalf besluit Pepijn in veiligheid te brengen en neemt hem mee naar Minas Tirith om de bevolking te waarschuwen.
-          </p>
-        </article>
+        <section class="card">
+          <h3 class="text-center card-header">The Return of the King</h3>
+          <img src="img/returnOfTheKing.jpg" alt="The Return of the King" class="card-img-top img-fluid">
+          <div class="card-body">
+            <h4>2003</h4>
+            <article>
+              <p>Gollem doet nog altijd dienst als gids voor Frodo en Sam, die hij naar Minas Ithil brengt. Aragorn, Legolas, Gimli, Gandalf, Théoden en Éomer arriveren ondertussen bij het door de Enten veroverde Isengard, waar ze Merijn en Pepijn
+                terugvinden.
+                Pepijn vindt in het water de Palantír van Saruman. Die avond besluit Pepijn er, tegen Gandalfs advies in, in te kijken. Hij ziet hoe Sauron een aanval beraamt op de stad Minas Tirith. Sauron ziet door de Palantír echter Pepijn en
+                denkt
+                dat
+                hij de Ene
+                Ring heeft. Gandalf besluit Pepijn in veiligheid te brengen en neemt hem mee naar Minas Tirith om de bevolking te waarschuwen.
+              </p>
+            </article>
+          </div>
 
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#king">
-          Lees Meer
-        </button>
+          <!-- Button trigger modal -->
+          <div class="card-footer text-center">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#king">
+              Lees Meer
+            </button>
+          </div>
+        </section>
 
         <!-- inhoud voor modaal -->
         <div class="modal fade" id="king" tabindex="-1" role="dialog" aria-labelledby="titleKing" aria-hidden="true">
@@ -409,7 +434,8 @@
               <div class="modal-body">
                 <p>De film begint met een flashback die toont hoe 500 jaar geleden Sméagol de Ene Ring in handen kreeg en deze hem langzaam veranderde in Gollem.
                 </p>
-                <p>Gollem doet nog altijd dienst als gids voor Frodo en Sam, die hij naar Minas Ithil brengt. Aragorn, Legolas, Gimli, Gandalf, Théoden en Éomer arriveren ondertussen bij het door de Enten veroverde Isengard, waar ze Merijn en Pepijn
+                <p>Gollem doet nog altijd dienst als gids voor Frodo en Sam, die hij naar Minas Ithil brengt. Aragorn, Legolas, Gimli, Gandalf, Théoden en Éomer arriveren ondertussen bij het door de Enten veroverde Isengard, waar ze Merijn en
+                  Pepijn
                   terugvinden.(In
                   de Extended editie steekt Grima Saruman in z'n rug en valt hij van de toren. Legolas vermoordt Grima. Saruman wordt gespiest en glijdt in het water. De Palantír valt hierdoor in het water. In de film laat Gandalf Saruman en Grima
                   onder
@@ -432,7 +458,8 @@
                   laat Gandalf
                   Pepijn het noodbaken ontsteken zodat het leger van Rohan denkt dat Gondor hen te hulp roept.
                 </p>
-                <p>Ondertussen wacht het leger van Rohan in tenten. Aragorn, Legolas en Gimli zijn daar ook. Aragorn krijgt bezoek van Elrond (die uit Rivendel komt), die het zwaard Narsil (waarmee Sauron ooit werd verslagen door Isildur) heeft laten
+                <p>Ondertussen wacht het leger van Rohan in tenten. Aragorn, Legolas en Gimli zijn daar ook. Aragorn krijgt bezoek van Elrond (die uit Rivendel komt), die het zwaard Narsil (waarmee Sauron ooit werd verslagen door Isildur) heeft
+                  laten
                   hersmeden tot
                   Anduril. Aragorn accepteert het zwaard en zijn lotsbestemming als koning van Gondor. Hij besluit de volgende dag samen met Gimli en Legolas naar het vervloekte Leger der doden te gaan. Als Aragorn, Gimli en Legolas beroep willen
                   doen
@@ -443,12 +470,14 @@
                 <p>Het leger van Sauron komt ondertussen op Minas Tirith af. Denethor raakt gespannen en daarom neemt Gandalf de leiding over de soldaten. De strijd om Minas Tirith barst los. Het leger van Sauron slaagt erin binnen te dringen in de
                   stad.
                   Denethor
-                  wil tijdens de strijd z'n zoon Faramir verbranden, omdat hij denkt dat hij dood is gegaan. Als Denethor hem bijna wil verbranden op de brandstapel, verschijnt Gandalf. Het lukt Pepijn nog net Faramir van de brandstapel af te halen.
+                  wil tijdens de strijd z'n zoon Faramir verbranden, omdat hij denkt dat hij dood is gegaan. Als Denethor hem bijna wil verbranden op de brandstapel, verschijnt Gandalf. Het lukt Pepijn nog net Faramir van de brandstapel af te
+                  halen.
                   Denethor
                   rent
                   onder de vlammen naar beneden in de afgrond, waar hevig wordt gevochten.
                 </p>
-                <p>Ondertussen, in Mordor, leidt Gollem Frodo en Sam in een val. Hij lokt hen naar het hol van de enorme spin Shelob. Frodo wordt door de angel van de spin gestoken, maar Sam kan haar wegjagen. Denkend dat Frodo dood is, neemt Sam de
+                <p>Ondertussen, in Mordor, leidt Gollem Frodo en Sam in een val. Hij lokt hen naar het hol van de enorme spin Shelob. Frodo wordt door de angel van de spin gestoken, maar Sam kan haar wegjagen. Denkend dat Frodo dood is, neemt Sam
+                  de
                   Ring van
                   hem
                   over om deze te vernietigen. Pas later hoort hij dat Frodo enkel verdoofd is, en hij volgt de groep Orks die Frodo hebben gevangen.
@@ -464,7 +493,8 @@
                   Extended Editie komt eerst de Mond van Sauron naar buiten die wordt gedood door Aragorn. In de normale film komt gelijk het leger van Mordor naar buiten en is de Mond van Sauron geskipt.) Het plan slaagt en Frodo en Sam bereiken
                   onopgemerkt
                   de
-                  Doemberg. Het is nu aan Frodo om de Ring in de lava te gooien. Maar net als bij Isildur duizenden jaren geleden, blijkt de macht van de Ring op het laatste moment ook te groot te zijn voor Frodo, en hij wil de Ring zelf houden. Dan
+                  Doemberg. Het is nu aan Frodo om de Ring in de lava te gooien. Maar net als bij Isildur duizenden jaren geleden, blijkt de macht van de Ring op het laatste moment ook te groot te zijn voor Frodo, en hij wil de Ring zelf houden.
+                  Dan
                   duikt
                   Gollem weer
                   op en valt Frodo aan. Gollem bijt Frodo's wijsvinger af. In de worsteling ontneemt Gollem Frodo de Ring. Al snel vechten Frodo en Gollem tegen elkaar om de Ring en door dat gevecht valt Gollem met Ring en al in de lava. De Ring
@@ -524,6 +554,7 @@
     $(function() {
       $('#inleiding p').matchHeight();
       $('#verhaal article').matchHeight();
+      $('.card-header').matchHeight();
     });
   </script>
 </body>
